@@ -1,0 +1,57 @@
+*,
+*:after,
+*:before {
+  margin: 0;
+  padding: 0;
+  @include border-box;
+}
+
+// Desktop
+@for $i from 1 to $total-columns + 1 {
+    .col-ds-#{$i}{
+        width: 100% / $total-columns * $i;
+        float: left;
+        // contain: content;
+    }
+}
+
+// Mobile
+@media #{$breakpoint-mobile} {
+    /* For mobile phones: */
+    [class*="col-"] {
+        width: 100%;
+    }
+}
+
+// Tablet
+@media #{$breakpoint-tablet} {
+    .section__divider {
+        margin: 3%;
+    }
+
+    .section__explore {
+        display: block;
+        margin: 20px;
+        &__image {
+            padding: 30px
+        }
+    }
+
+    .card {
+        margin: 50px;
+        &__flex-item {
+            text-align: center;
+            background-color: white;
+            box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+            transition: 0.3s;
+            color: #888F94;
+        }
+    }
+
+    @for $i from 1 to $total-columns + 1{
+        .col-tb-#{$i}{
+          width: 100% / $total-columns * $i;
+          float: left;
+        }
+      }
+}

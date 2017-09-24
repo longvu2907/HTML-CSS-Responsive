@@ -1,0 +1,21 @@
+@import url('https://fonts.googleapis.com/css?family=PT+Sans');
+
+.line { 
+	border: 0.8px solid #1FB4F6;
+	width: 50px;
+	text-align: center;
+	&--short {
+		aria-setsize: 30px;
+		display: inline-block;
+	}
+
+	&--start {
+		margin: 0;
+	}
+}
+
+body {
+	font-family: 'PT Sans', Arial, sans-serif;
+	color: white;
+	margin: 10px;
+} 

@@ -1,0 +1,33 @@
+.footer {
+    background: #3F5267;
+    text-align: left !important;
+    color: #72869C !important;
+    font-size: 22px;
+
+    &__wrapper {
+        margin: 0 50px;
+    }
+
+    &__body {
+        margin: 40px 0;
+
+        i {
+            padding: 0 20px!important
+        }
+    }
+
+    &__title-body {
+        color: white;
+        margin-top: 40px;
+    }
+
+    &__items {
+        text-align: left;
+        font-size: 30px;        
+        color: #72869C;
+
+        i {   
+            padding: 10px !important;
+        }
+    }
+}

@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>RWD - Responsive Web Design Assignment</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+  <div class="header">
+    <div class="header__logo">
+      <h2 class="header__logo header__text-normal"><span class="header__logo header__text-highlight">R</span>WD</h2>
+    </div>
+    <div class="header__menu">
+      <ul class="header__list">
+        <li class="header__list-item"><a class="header__list-link header__list-link--active" href="#home"> Home</a></li>
+        <li class="header__list-item"><a class="header__list-link" href="#explore"> Explore</a></li>
+        <li class="header__list-item"><a class="header__list-link" href="#pricing"> Pricing</a></li>
+        <li class="header__list-item"><a class="header__list-link" href="#services"> Services</a></li>
+        <li class="header__list-item"><a class="header__list-link" href="#team"> Team</a></li>
+        <li class="header__list-item"><a class="header__list-link btn btn__border--red">Sign up free</a></li>
+      </ul>
+    </div>
+  </div>
+
+  <div id="home">
+    <section class="section section__introduce">
+      <div class="section section__introduce section__wrapper-center">
+        <h1>RWD - Responsive Web Design</h1>
+        <p> ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque
+          penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
+        <button class="btn btn--large">
+                    <span class="btn__text btn__text--grey">Demo</span>
+                </button>
+        <button class="btn btn--large btn--danger">
+                    <span class="btn__text btn__text--white">Download</span>
+                </button>
+
+      </div>
+    </section>
+    <section class="section">
+      <div class="section__divider">
+        <h1 class="section__text--black">Explore Our Product</h1>
+        <p class="section__text--grey"> Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis
+          natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
+        <hr class="line line--short">
+      </div>
+    </section>
+    <section class="section section__explore" id="#explore">
+      <div class="col-ds-8 col-tb-12">
+        <img class="col-ds-12 section__explore-image" src="images/work1.png">
+      </div>
+      <div class="col-ds-4 col-tb-12" style="margin: 150px 50px 50px 50px;">
+        <div>
+          <div class="col-tb-12">
+            <div class="col-tb-6 col-md-6">
+              <div class="section section__explore-items">
+                <i class="icon icon--medium icon--people"></i>
+                <h3 class="section__explore section__text--dark-grey">Real Project for real solution</h3>
+              </div>
+              <div class="section section__explore-items">
+                <p class="section__explore section__text--grey"> Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.
+                  </p>
+              </div>
+            </div>
+            <div class="col-tb-6">
+              <div class="section section__explore-items">
+                <i class="icon icon--medium icon--camrecorder"></i>
+                <h3 class="section__explore section__text--dark-grey">Real Project for real solution</h3>
+              </div>
+              <div class="section section__explore-items">
+                <p class="section__explore section__text--grey"> ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-tb-12">
+            <div class="section section__explore-items">
+              <i class="icon icon--medium icon--shield"></i>
+              <h3 class="section__explore section__text--dark-grey">Real Project for real solution</h3>
+            </div>
+            <div class="section section__explore-items">
+              <p class="section__explore section__text--grey"> ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="section section__pricing" id="pricing">
+      <div class="section__divider">
+        <h1 class="section__text--black">Plans Built For Every One</h1>
+        <p class="section__text--grey"> Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis
+          natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
+        <hr class="line line--short">
+      </div>
+      <ul class="section__flex-container">
+        <li class="card card__flex-item">
+          <div class="card__flex-item__title">
+            <b>STARTER</b>
+          </div>
+          <div class="card__flex-item__body">
+            <div class="card__flex-item__label">
+              <div class="card__flex-item__text--top"><span>$</span></div>
+              <div><span class="card__flex-item__text--large">9</span></div>
+              <div class="card__flex-item__text--bottom"><span> /MONTH</span></div>
+            </div>
+            <p> Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.
+            </p>
+            <button class="btn btn--medium btn--primary btn__text--white">SELECT PLAN</button>
+          </div>
+        </li>
+        <li class="card card__flex-item">
+          <div class="card__flex-item__title">
+            <b>BASIC</b>
+          </div>
+          <div class="card__flex-item__body">
+            <div class="card__flex-item__label">
+              <div class="card__flex-item__text--top"><span>$</span></div>
+              <div><span class="card__flex-item__text--large">27</span></div>
+              <div class="card__flex-item__text--bottom"><span> /MONTH</span></div>
+            </div>
+            <p> Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.</p>
+            <button class="btn btn--medium btn--primary btn__text--white">SELECT PLAN</button>
+          </div>
+        </li>
+
+        <li class="card card__flex-item">
+          <div class="card__flex-item__title">
+            <b>PRO</b>
+          </div>
+          <div class="card__flex-item__body">
+            <div class="card__flex-item__label">
+              <div class="card__flex-item__text--top"><span>$</span></div>
+              <div><span class="card__flex-item__text--large">74</span></div>
+              <div class="card__flex-item__text--bottom"><span> /MONTH</span></div>
+            </div>
+            <p> Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.</p>
+            <button class="btn btn--medium btn--danger btn__text--white">SELECT PLAN</button>
+          </div>
+        </li>
+        <li class="card card__flex-item">
+          <div class="card__flex-item__title">
+            <b>UNLIMITED</b>
+          </div>
+          <div class="card__flex-item__body">
+            <div class="card__flex-item__label">
+              <div class="card__flex-item__text--top"><span>$</span></div>
+              <div><span class="card__flex-item__text--large">140</span></div>
+              <div class="card__flex-item__text--bottom"><span> /MONTH</span></div>
+            </div>
+            <p> Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.
+            </p>
+            <button class="btn btn--medium btn--primary btn__text--white">SELECT PLAN</button>
+          </div>
+        </li>
+      </ul>
+      <div style="margin: 50px 30%; font-size: 20px; color: #8F989F;">
+        <p> Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis
+          natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
+      </div>
+    </section>
+    <section id="#services" class="section section__services" id="#services">
+      <div class="section__divider">
+        <h1 class="section__text--black">We Offer Services</h1>
+        <p> Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis
+          natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
+        <hr class="line line--short">
+      </div>
+
+      <div class="section__flex-container section__services__body">
+        <div class="col-ds-4 col-tb-6">
+          <div class="">
+            <div class="section__services-body--item-left col-ds-2 col-md-2">
+              <i class="icon icon--large icon--left icon--chemistry"></i>
+            </div>
+            <div class="col-ds-10 col-md-10">
+              <h3 class="section__services-body--text-left">Hand-crafted with Detailed</h3>
+              <p class="section__services-body--text-left">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum
+                sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
+            </div>
+          </div>
+          <div>
+            <div class="section__services-body--item-left col-ds-2 col-md-2">
+              <i class="icon icon--large icon--left icon--energy"></i>
+            </div>
+            <div class="col-ds-10 col-md-10">
+              <h3 class="section__services-body--text-left">Light and Fast</h3>
+              <p class="section__services-body--text-left">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum
+                sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-ds-4 col-tb-6">
+          <div>
+            <div class="section__services-body--item-left col-ds-2 col-md-2">
+              <i class="icon icon--large icon--left icon--trophy"></i>
+            </div>
+            <div class="col-ds-10 col-md-10">
+              <h3 class="section__services-body--text-left">Award-winning Landing Page</h3>
+              <p class="section__services-body--text-left">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum
+                sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
+            </div>
+          </div>
+          <div>
+            <div class="section__services-body--item-left col-ds-2 col-md-2">
+              <i class="icon icon--large icon--left icon--plane"></i>
+            </div>
+            <div class="col-ds-10 col-md-10">
+              <h3 class="section__services-body--text-left">Sleek and Smooth Animation</h3>
+              <p class="section__services-body--text-left">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum
+                sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-ds-4 col-tb-12">
+          <div>
+            <div class="section__services-body--item-left col-ds-2 col-md-1">
+              <i class="icon icon--large icon--left icon--people"></i>
+            </div>
+            <div class="col-ds-10 col-md-11">
+              <h3 class="section__services-body--text-left">Satisfied & Happy Client</h3>
+              <p class="section__services-body--text-left">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum
+                sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
+            </div>
+          </div>
+          <div>
+            <div class="section__services-body--item-left col-ds-2 col-md-1">
+              <i class="icon icon--large icon--left icon--screen-desktop"></i>
+            </div>
+            <div class="col-ds-10 col-md-11">
+              <h3 class="section__services-body--text-left">Looks Amazing on Devices</h3>
+              <p class="section__services-body--text-left">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum
+                sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="section__services-footer">
+        <button class="btn btn--medium btn--primary btn__text--white">LEARN MORE</button>
+      </div>
+    </section>
+    <section class="section section__team" id="#team">
+      <div class="section__divider">
+        <h1 class="section__text--black">Meet The Team</h1>
+        <p class="section__text--grey"> Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis
+          natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
+        <hr class="line line--short">
+      </div>
+      <div class="section__team__body">
+        <div class="section__flex-container">
+          <!-- <div class="col-tb-12"> -->
+             <div class="col-tb-6"> 
+              <div class="card card__flex-item">
+                <button class="btn btn--circle">P1</button>
+                <div class="card__title">
+                  <h2 class="section__text--black">ROGER GARFIELD</h2>
+                  <b>Co-Founder, Lead Deverloper</b>
+
+                </div>
+                <div class="card__body">
+                  <p> Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.
+                    Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
+                </div>
+                <div class="card__icon">
+                  <i class="icon icon--small icon--facebook"></i>
+                  <i class="icon icon--small icon--twitter"></i>
+                  <i class="icon icon--small icon--dribbble"></i>
+                  <i class="icon icon--small icon--codepen"></i>
+                  <i class="icon icon--small icon--github-alt"></i>
+                </div>
+              </div>
+             </div> 
+             <div class="col-tb-6"> 
+              <div class="card card__flex-item">
+                <button class="btn btn--circle">P1</button>
+                <div class="card__title">
+                  <h2 class="section__text--black">KEVIN STEVE</h2>
+                  <b>Co-Founder, Product Designer</b>
+                </div>
+                <div class="card__body">
+                  <p> Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.
+                    Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
+                </div>
+                <div class="card__icon">
+                  <i class="icon icon--small icon--facebook"></i>
+                  <i class="icon icon--small icon--twitter"></i>
+                  <i class="icon icon--small icon--dribbble"></i>
+                  <i class="icon icon--small icon--codepen"></i>
+                  <i class="icon icon--small icon--github-alt"></i>
+                </div>
+              </div>
+             </div> 
+          <!-- </div> -->
+           <div class="col-tb-12"> 
+            <div class="card card__flex-item">
+              <button class="btn btn--circle">P1</button>
+              <div class="card__title">
+                <h2 class="section__text--black">ROSS STANDFORD</h2>
+                <b>Full Stack Deverloper</b>
+              </div>
+              <div class="card__body">
+                <p> Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.
+                  Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
+              </div>
+              <div class="card__icon">
+                <i class="icon icon--small icon--facebook"></i>
+                <i class="icon icon--small icon--twitter"></i>
+                <i class="icon icon--small icon--dribbble"></i>
+                <i class="icon icon--small icon--codepen"></i>
+                <i class="icon icon--small icon--github-alt"></i>
+              </div>
+            </div>
+           </div> 
+        </div>
+      </div>
+    </section>
+  </div>
+
+  <footer>
+    <section class="footer">
+      <div class="section__flex-container footer__wrapper">
+        <!-- <div class="col-tb-12"> -->
+          <div class="col-ds-4 col-tb-6">
+            <div class="footer__title-body">
+              <h2>About Us</h2>
+            </div>
+            <hr class="line line--start">
+            <div class="footer__body">
+              <p> Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum
+                sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
+            </div>
+            <hr class="line line--start">
+            <div class="footer__items">
+              @Lorem ipsum dolor sit amet
+              <br> All Rights Reserved
+            </div>
+          </div>
+          <div class="col-ds-4 col-tb-6">
+            <div class="footer__title-body">
+              <h2>Our Address</h2>
+            </div>
+            <hr class="line line--start">
+            <div class="footer__body">
+              <div class="col-ds-12">
+                <i class="icon icon--medium icon--left icon--location-pin"></i>
+                <p> Lorem ipsum dolor sit amet, consectetuer adipiscing elit. </p>
+              </div>
+              <div class="col-ds-12">
+                <i class="icon icon--medium icon--left icon--phone"></i>
+                <p> +1235 2335 98</p>
+              </div>
+              <div class="col-ds-12">
+                <i class="icon icon--medium icon--left icon--envolope"></i>
+                <p> info@yoursite.com </p>
+              </div>
+              <div class="col-ds-12">
+                <i class="icon icon--medium icon--left icon--globe"></i>
+                <p> www.yoursite.com </p>
+              </div>
+            </div>
+            <div class="footer__items">
+              <div class="footer__title-body">Connect with Us</div>
+              <hr class="line line--start">
+              <div class="footer__body">
+                <i class="icon icon-small icon--facebook"></i>
+                <i class="icon icon-small icon--twitter"></i>
+                <i class="icon icon-small icon--dribbble"></i>
+                <i class="icon icon-small icon--github-alt"></i>
+              </div>
+            </div>
+          </div>
+        <!-- </div> -->
+        <div class="col-ds-4 col-tb-12">
+          <div class="footer__title-body">
+            <h2>Drop us a Line</h2>
+          </div>
+          <hr class="line line--start">
+          <div class="footer__body">
+            <form class="form">
+              <input class="form__input" type="text" placeholder="Name">
+              <div class="maxl">
+                <label class="radio inline"> 
+                                    <input type="radio" name="sex" value="male" checked>
+                                    <span> Male </span> 
+                                </label>
+                <label class="radio inline"> 
+                                    <input type="radio" name="sex" value="female">
+                                    <span>Female </span> 
+                                </label>
+              </div>
+              <input class="form__input" type="text" placeholder="Email">
+              <textarea class="form__textarea"></textarea>
+              <button class="btn btn--large btn--danger">
+                                    <span class="btn__text btn__text--white">Send Message</span>
+                            </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+  </footer>
+</body>
+
+</html>

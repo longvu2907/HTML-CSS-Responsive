@@ -1,0 +1,44 @@
+@include font-face('icomoon', '../../fonts/icomoon/icomoon', normal, normal, eot woff ttf svg);
+@include font-face('simple line icons', '../../fonts/simple-line-icons/Simple-Line-Icons', normal, normal, eot woff ttf svg);
+
+@each $name, $visual in $icon-map-icomoon {
+	.icon--#{$name} {
+		&:before {
+		font-family: 'icomoon';
+		content: $visual;
+		}
+	}
+}
+
+@each $name, $visual in $icon-map-simple {
+	.icon--#{$name} {
+		&:before {
+		font-family: 'simple line icons';		
+		content: $visual;
+		}
+	}
+}
+
+.icon {
+	color: #1FB5F6;
+	font-style: normal;
+
+	&--large {
+		font-size: $icon-size-lg;
+	}
+
+	&--medium {
+		padding: $icon-padding-md;
+		font-size: $icon-size-md;
+	}
+
+	&--small {
+		font-size: $icon-size-sm;		
+		padding: $icon-padding-sm;
+		color: #000;
+	}
+
+	&--left {
+		float: left;		
+	}
+}

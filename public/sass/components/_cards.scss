@@ -1,0 +1,45 @@
+.card {
+    margin: 15px;
+    &__flex-item {
+        width: 300px;
+        text-align: center;
+        background-color: white;
+        box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+        transition: 0.3s;
+        color: #888F94;
+
+        &__title {
+            margin: 25px;			
+            font-size: 18px;
+        }
+
+        &__body {
+            margin: 40px;
+        }
+
+        &__label {
+            display: inline-flex;
+            margin: 0px 0 10px;
+        }
+
+        &__text {
+            &--large {
+                font-size: 80px;
+            }
+
+            &--top {
+                font-size: 45px;
+                padding: 15px 5px;
+            }
+
+            &--bottom {
+                margin-top: auto;
+                margin-bottom: 20px;
+            }
+        }
+
+        &__icon {
+            margin: 20px;		
+        }
+    }
+}

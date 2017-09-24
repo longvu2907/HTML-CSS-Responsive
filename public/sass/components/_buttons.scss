@@ -1,0 +1,112 @@
+.btn { 
+    background: transparent;
+    text-decoration:none;
+    border-radius: 5px;
+    border: 1.5px solid white;
+
+    &--large {
+        padding: 18px 60px;
+        font-size: 22px;
+    }
+
+    &--medium {
+        padding: 15px 20px;
+        font-size: 18px;
+    }
+
+    &--primary {
+        border: none;
+        box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+		//transition: 0.3s;
+        @include btn-bg(#1FB5F6);
+    }
+
+    &--danger {
+        border: none;
+        box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+        @include btn-bg(#e74c3c);
+    }
+
+    &__border {
+        &--red {
+            border-radius: 80px;
+            border: 2px solid red;
+        }
+    }
+
+    &__text {
+        &--grey {
+            color: $text-normal-color;   
+        }
+
+        &--white {
+            color: white;
+        }
+
+        &--red {
+            border: 2px solid red;
+        }
+    }
+  
+    &--circle {
+        background: #CCCCCC;
+        width: 180px;
+        height: 180px;
+        border-radius: 50%;
+        border: 20px solid #F1FAFF;
+        margin-top: -100px;
+        font-size: 28px;
+        font-family: "PT Sans", Arial, serif;
+        font-weight: bold;
+        color: #8F989F;
+    }
+ 
+}
+
+$secondary: #1FB5F6;
+
+.radio {
+    margin:25px ;
+    display: inline-block;
+    margin-left:10px;
+
+    span {
+        color: #72869C !important;
+        font-size: 22px;
+    }
+
+    input[type="radio"], 
+    input[type="checkbox"] {
+        display:none;
+    }
+
+    input[type="radio"] + span:before,
+
+    input[type="checkbox"] + span:before {
+        position: relative;
+        top: 1px;
+        display: inline-block;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 1;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+    }
+
+    input[type="radio"] + span:before {
+        content: "\f111";
+        font-family: 'icomoon';
+        color: white;
+        font-size: 28px;    
+        margin-right: 15px;        
+    }
+
+    input[type="radio"]:checked + span:before {
+        font-family: 'simple line icons';
+        content: "\e080"; /* ok-circle */
+        color: $secondary;        
+        font-size: 28px;
+        margin-right: 15px;        
+        
+    }
+}
